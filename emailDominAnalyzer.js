@@ -1,4 +1,7 @@
 function analyzeEmailDomain(text){
+    if(typeof text !== "string"){
+        return "Invalid";
+    }
     let words = text.split(" ");
     let emailCounter=0;
     let longestDomain="";
@@ -16,5 +19,5 @@ function analyzeEmailDomain(text){
 
 }
 let text="Contact support@gmail.com admin@yahoo.com info@programminghero.com"
-let result = analyzeEmailDomain(text);
+let result = analyzeEmailDomain(589);
 console.log(result)
