@@ -4,11 +4,8 @@ const getAvailableProducts=(products)=>{
         if(product.stock>1){
             return product;
         }
-
     })
     return availableProduct;
-
-
 }
 let products=[
     { name: "Pen", stock: 5 }, 
